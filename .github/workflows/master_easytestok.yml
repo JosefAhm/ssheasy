@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: https://index.docker.io/v1/
-        username: ${{ secrets.AzureAppService_ContainerUsername_d4e71b1313e34dc3a8dc95e8b0a3f34c }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_208a67b4940749ed834f5420598b4c89 }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_fe854f261d1b42899e8c738abbca4a79 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_dad4001d93c94e248eea45e4c4a20561 }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_d4e71b1313e34dc3a8dc95e8b0a3f34c }}/nginx:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_fe854f261d1b42899e8c738abbca4a79 }}/nginx:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'easytestok'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_361fe04ccc564d0aa0657502fddcc1ac }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_d4e71b1313e34dc3a8dc95e8b0a3f34c }}/nginx:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_80ade81ce752467cb8f1b77ae8c31584 }}
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_fe854f261d1b42899e8c738abbca4a79 }}/nginx:${{ github.sha }}'
