@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'easytestok'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_8a2bfa553aad4e89b4cd7174896ec85b }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_8fc01ae6e2d5497fb4da2ab829988b61 }}/nginx:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_80ade81ce752467cb8f1b77ae8c31584 }}
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_fe854f261d1b42899e8c738abbca4a79 }}/nginx:${{ github.sha }}'
