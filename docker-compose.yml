@@ -30,7 +30,7 @@ services:
       - '-al'
       - '/logs/connections.log'
     ports:
-      - 6666:6666
+      - 5555:5555
     restart: always
 
   prometheus:
