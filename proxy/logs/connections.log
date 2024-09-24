@@ -1,0 +1,6 @@
+2024-09-24T09:50:14.591914107Z,172.18.0.1,testssh,22,connection request
+2024-09-24T09:50:14.594422049Z,172.18.0.1,testssh,22,connection established
+2024-09-24T09:50:23.111718289Z,172.18.0.1,testssh,22,proxy finished copied (2392/3628)bytes anyerrors (<nil>,read tcp 172.18.0.3:47334->172.18.0.2:22: use of closed network connection)
+2024-09-24T09:50:35.863979835Z,172.18.0.1,4.235.114.136,22,connection request
+2024-09-24T09:50:35.876740284Z,172.18.0.1,4.235.114.136,22,connection established
+2024-09-24T09:51:08.791050542Z,172.18.0.1,4.235.114.136,22,proxy finished copied (2460/7458)bytes anyerrors (<nil>,read tcp 172.18.0.3:58058->4.235.114.136:22: use of closed network connection)
