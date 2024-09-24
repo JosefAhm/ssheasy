@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_f38720c5e7314cc384c98cd3ca9d833c }}/josahm/nginx:${{ github.sha }}
-        file: ./Dockerfile
+        file: .nnginx/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
