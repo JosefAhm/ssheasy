@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy container app to Azure Web App - epicepicmyo
+name: Build and deploy container app to Azure Web App - easytestok
 
 on:
   push:
@@ -23,15 +23,15 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: https://index.docker.io/v1/
-        username: ${{ secrets.AzureAppService_ContainerUsername_fe854f261d1b42899e8c738abbca4a79 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_dad4001d93c94e248eea45e4c4a20561 }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_f38720c5e7314cc384c98cd3ca9d833c }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_d62ab7eeb0bd4235b7f2f8d65afe67c4 }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_8fc01ae6e2d5497fb4da2ab829988b61 }}/nginx:${{ github.sha }}
-        file: ./nginx/Dockerfile
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_f38720c5e7314cc384c98cd3ca9d833c }}/josahm/nginx:${{ github.sha }}
+        file: ./Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'easytestok'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_80ade81ce752467cb8f1b77ae8c31584 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_fe854f261d1b42899e8c738abbca4a79 }}/nginx:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_619b16356a594b0da2e00a2c6d4e188b }}
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_f38720c5e7314cc384c98cd3ca9d833c }}/josahm/nginx:${{ github.sha }}'
