@@ -100,3 +100,6 @@
 2024-09-24T11:29:53.372474647Z,172.19.0.1,4.235.114.136,22,connection request
 2024-09-24T11:29:53.385964714Z,172.19.0.1,4.235.114.136,22,connection established
 2024-09-24T11:29:56.702049825Z,172.19.0.1,4.235.114.136,22,proxy finished copied (1020/1734)bytes anyerrors (<nil>,read tcp 172.19.0.4:59116->4.235.114.136:22: use of closed network connection)
+2024-09-24T11:34:59.200538433Z,172.19.0.1,4.235.114.136,22,connection request
+2024-09-24T11:34:59.21491766Z,172.19.0.1,4.235.114.136,22,connection established
+2024-09-24T12:11:55.796498959Z,172.19.0.1,4.235.114.136,22,proxy finished copied (34020/54346)bytes anyerrors (<nil>,read tcp 172.19.0.4:45288->4.235.114.136:22: use of closed network connection)
