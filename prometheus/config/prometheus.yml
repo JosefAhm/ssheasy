@@ -6,4 +6,4 @@ scrape_configs:
 - job_name: proxy
 
   static_configs:
-  - targets: ['proxy:6767']
+  - targets: ['proxy:6666']
