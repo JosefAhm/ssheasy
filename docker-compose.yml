@@ -20,7 +20,7 @@ services:
   proxy:
     container_name: proxy
     build:
-      context: ./proxy
+      context: .
       dockerfile: ./proxy/Dockerfile
     hostname: proxy
     volumes:
